@@ -1,11 +1,20 @@
 import React from 'react';
 import logo from '../assets/youtube-logo.png';
+import { useDispatch } from 'react-redux';
+import { toggleMenu } from '../utils/appSlice';
 
 const Head = () => {
+
+    const dispatch = useDispatch();
+
+const toggleMenuHandler = () =>{
+      dispatch(toggleMenu())
+}
+
     return (
         <div className='grid grid-flow-col h-12 p-1 m-1 shadow-md items-center'>
             <div className='flex col-span-1'>
-                <span class="material-symbols-outlined">menu</span>
+                <div className='cursor-pointer' onClick={() => toggleMenuHandler()}><span class="material-symbols-outlined">menu</span></div>
                 <img className='h-6' src={logo} alt='youtube-logo' />
             </div>
             <div className='flex col-span-10 justify-center h-8'>

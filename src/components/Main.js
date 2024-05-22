@@ -1,10 +1,10 @@
 import React from 'react'
-import Button from './Button'
+import ButtonList from './ButtonList'
 import Video from './Video'
 
 const Main = () => {
     return (<>
-        <Button />
+        <ButtonList />
         <Video />
     </>
     )
