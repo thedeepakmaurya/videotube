@@ -1,12 +1,12 @@
 import React from 'react'
 import ButtonList from './ButtonList'
-import Video from './Video'
+import VideoContainer from './VideoContainer'
 
 const Main = () => {
-    return (<>
+    return (<div className='flex flex-col  overflow-scroll'>
         <ButtonList />
-        <Video />
-    </>
+        <VideoContainer />
+    </div>
     )
 }
 
