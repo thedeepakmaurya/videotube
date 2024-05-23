@@ -10,7 +10,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className='p-5 shadow-lg w-48 drop-shadow-none'>
+    <div className='p-5 shadow-lg  min-w-48 h-screen '>
       <ul>
         <li><span className="material-symbols-outlined align-middle pr-2">home</span> Home</li>
         <li><span className="material-symbols-outlined align-middle pr-2">movie</span>Shorts</li>
@@ -35,4 +35,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Sidebar;
