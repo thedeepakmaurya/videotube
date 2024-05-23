@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { closedMenu } from '../utils/appSlice'
 
 const WatchPage = () => {
-  return (
-    <div>WatchPage</div>
-  )
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(closedMenu())
+    }, [])
+
+    return (
+        <div>WatchPage</div>
+    )
 }
 
 export default WatchPage

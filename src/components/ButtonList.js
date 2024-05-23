@@ -6,7 +6,7 @@ const ButtonList = () => {
 
   return (
     <div className='overflow-x-auto whitespace-nowrap'>
-      {List.map((name, index) => <button key={index} className='px-4 py-1 m-4 bg-gray-200 rounded-md'>{name}</button>)}
+      {List.map((name, index) => <button key={index} className='px-4 py-1 m-2 bg-gray-200 rounded-md'>{name}</button>)}
     </div>
   )
 }

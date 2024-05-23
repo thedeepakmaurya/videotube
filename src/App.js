@@ -4,6 +4,7 @@ import Head from "./components/Head";
 import store from "./utils/store";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Main from "./components/Main";
+import WatchPage from "./components/WatchPage";
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
       children: [
         {path: "/",
         element: <Main />
+        },
+        {path: "watch",
+        element: <WatchPage />
         }
       ]
     }

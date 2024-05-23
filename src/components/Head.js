@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/youtube-logo.png';
 import { useDispatch } from 'react-redux';
 import { toggleMenu } from '../utils/appSlice';
+import { Link } from 'react-router-dom';
 
 const Head = () => {
 
@@ -15,7 +16,7 @@ const toggleMenuHandler = () =>{
         <div className='grid grid-flow-col h-12 p-1 m-1 shadow-md items-center'>
             <div className='flex col-span-1'>
                 <div className='cursor-pointer' onClick={() => toggleMenuHandler()}><span className="material-symbols-outlined">menu</span></div>
-                <img className='h-6' src={logo} alt='youtube-logo' />
+                <a href="/"><img className='h-6' src={logo} alt='youtube-logo' /></a>
             </div>
             <div className='flex col-span-10 justify-center h-8'>
                 <input className='w-1/2 border border-gray-400 outline-none rounded-l-full' type='text' />
